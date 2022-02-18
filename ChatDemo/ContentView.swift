@@ -7,10 +7,25 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView{
+            ChatView()
+                .tabItem {
+                    Label("Chat", systemImage: "message")
+                }
+            MapView()
+                .tabItem{
+                    Label("Map", systemImage: "map")
+                }
+            ProfileView()
+                .tabItem{
+                    Label("Profile", systemImage: "person.crop.circle")
+                }
+            
+        }
     }
 }
 

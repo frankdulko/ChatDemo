@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9140891B27BD88650017BB61 /* CheckInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9140891A27BD88650017BB61 /* CheckInView.swift */; };
+		9140891D27BD8C1B0017BB61 /* MapHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9140891C27BD8C1B0017BB61 /* MapHandler.swift */; };
+		9140891F27BD8CDB0017BB61 /* LandmarkAnnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9140891E27BD8CDB0017BB61 /* LandmarkAnnotations.swift */; };
+		9140892127BD8EF30017BB61 /* PlaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9140892027BD8EF30017BB61 /* PlaceListView.swift */; };
 		9179A75127BB67C40089D693 /* ChatDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179A75027BB67C40089D693 /* ChatDemoApp.swift */; };
 		9179A75327BB67C40089D693 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179A75227BB67C40089D693 /* ContentView.swift */; };
 		9179A75527BB67C60089D693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9179A75427BB67C60089D693 /* Assets.xcassets */; };
@@ -14,6 +18,15 @@
 		9179A76227BB67C60089D693 /* ChatDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179A76127BB67C60089D693 /* ChatDemoTests.swift */; };
 		9179A76C27BB67C60089D693 /* ChatDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179A76B27BB67C60089D693 /* ChatDemoUITests.swift */; };
 		9179A76E27BB67C60089D693 /* ChatDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179A76D27BB67C60089D693 /* ChatDemoUITestsLaunchTests.swift */; };
+		9179A77C27BB687C0089D693 /* StreamChat in Frameworks */ = {isa = PBXBuildFile; productRef = 9179A77B27BB687C0089D693 /* StreamChat */; };
+		9179A77E27BB687C0089D693 /* StreamChatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9179A77D27BB687C0089D693 /* StreamChatUI */; };
+		9179A78027BB69CD0089D693 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179A77F27BB69CD0089D693 /* AppDelegate.swift */; };
+		9179A78327BBFAA30089D693 /* StreamChatSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9179A78227BBFAA30089D693 /* StreamChatSwiftUI */; };
+		9179A78527BC02FF0089D693 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179A78427BC02FE0089D693 /* ProfileView.swift */; };
+		9179A78727BC03130089D693 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179A78627BC03130089D693 /* ChatView.swift */; };
+		9179A78927BC07E90089D693 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179A78827BC07E90089D693 /* MapView.swift */; };
+		9179A78C27BC0EDE0089D693 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179A78B27BC0EDE0089D693 /* Landmark.swift */; };
+		9179A78E27BC55880089D693 /* NearbyLandmarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179A78D27BC55880089D693 /* NearbyLandmarks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9140891A27BD88650017BB61 /* CheckInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInView.swift; sourceTree = "<group>"; };
+		9140891C27BD8C1B0017BB61 /* MapHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapHandler.swift; sourceTree = "<group>"; };
+		9140891E27BD8CDB0017BB61 /* LandmarkAnnotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkAnnotations.swift; sourceTree = "<group>"; };
+		9140892027BD8EF30017BB61 /* PlaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListView.swift; sourceTree = "<group>"; };
 		9179A74D27BB67C40089D693 /* ChatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9179A75027BB67C40089D693 /* ChatDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDemoApp.swift; sourceTree = "<group>"; };
 		9179A75227BB67C40089D693 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +61,13 @@
 		9179A76727BB67C60089D693 /* ChatDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9179A76B27BB67C60089D693 /* ChatDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDemoUITests.swift; sourceTree = "<group>"; };
 		9179A76D27BB67C60089D693 /* ChatDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9179A77F27BB69CD0089D693 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9179A78427BC02FE0089D693 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		9179A78627BC03130089D693 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		9179A78827BC07E90089D693 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		9179A78A27BC09150089D693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9179A78B27BC0EDE0089D693 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		9179A78D27BC55880089D693 /* NearbyLandmarks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyLandmarks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +75,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9179A78327BBFAA30089D693 /* StreamChatSwiftUI in Frameworks */,
+				9179A77E27BB687C0089D693 /* StreamChatUI in Frameworks */,
+				9179A77C27BB687C0089D693 /* StreamChat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,10 +121,21 @@
 		9179A74F27BB67C40089D693 /* ChatDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9179A78A27BC09150089D693 /* Info.plist */,
 				9179A75027BB67C40089D693 /* ChatDemoApp.swift */,
 				9179A75227BB67C40089D693 /* ContentView.swift */,
 				9179A75427BB67C60089D693 /* Assets.xcassets */,
 				9179A75627BB67C60089D693 /* Preview Content */,
+				9179A77F27BB69CD0089D693 /* AppDelegate.swift */,
+				9179A78427BC02FE0089D693 /* ProfileView.swift */,
+				9179A78627BC03130089D693 /* ChatView.swift */,
+				9179A78827BC07E90089D693 /* MapView.swift */,
+				9179A78B27BC0EDE0089D693 /* Landmark.swift */,
+				9179A78D27BC55880089D693 /* NearbyLandmarks.swift */,
+				9140891A27BD88650017BB61 /* CheckInView.swift */,
+				9140891C27BD8C1B0017BB61 /* MapHandler.swift */,
+				9140891E27BD8CDB0017BB61 /* LandmarkAnnotations.swift */,
+				9140892027BD8EF30017BB61 /* PlaceListView.swift */,
 			);
 			path = ChatDemo;
 			sourceTree = "<group>";
@@ -143,6 +181,11 @@
 			dependencies = (
 			);
 			name = ChatDemo;
+			packageProductDependencies = (
+				9179A77B27BB687C0089D693 /* StreamChat */,
+				9179A77D27BB687C0089D693 /* StreamChatUI */,
+				9179A78227BBFAA30089D693 /* StreamChatSwiftUI */,
+			);
 			productName = ChatDemo;
 			productReference = 9179A74D27BB67C40089D693 /* ChatDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +258,10 @@
 				Base,
 			);
 			mainGroup = 9179A74427BB67C40089D693;
+			packageReferences = (
+				9179A77A27BB687C0089D693 /* XCRemoteSwiftPackageReference "stream-chat-swift" */,
+				9179A78127BBFAA30089D693 /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */,
+			);
 			productRefGroup = 9179A74E27BB67C40089D693 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,7 +304,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9140891F27BD8CDB0017BB61 /* LandmarkAnnotations.swift in Sources */,
+				9179A78C27BC0EDE0089D693 /* Landmark.swift in Sources */,
+				9140891D27BD8C1B0017BB61 /* MapHandler.swift in Sources */,
+				9179A78527BC02FF0089D693 /* ProfileView.swift in Sources */,
+				9179A78927BC07E90089D693 /* MapView.swift in Sources */,
+				9179A78027BB69CD0089D693 /* AppDelegate.swift in Sources */,
+				9140892127BD8EF30017BB61 /* PlaceListView.swift in Sources */,
+				9179A78727BC03130089D693 /* ChatView.swift in Sources */,
 				9179A75327BB67C40089D693 /* ContentView.swift in Sources */,
+				9140891B27BD88650017BB61 /* CheckInView.swift in Sources */,
+				9179A78E27BC55880089D693 /* NearbyLandmarks.swift in Sources */,
 				9179A75127BB67C40089D693 /* ChatDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,6 +478,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ChatDemo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatDemo/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +509,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ChatDemo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatDemo/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -579,6 +642,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9179A77A27BB687C0089D693 /* XCRemoteSwiftPackageReference "stream-chat-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getstream/stream-chat-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		9179A78127BBFAA30089D693 /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getstream/stream-chat-swiftui";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9179A77B27BB687C0089D693 /* StreamChat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9179A77A27BB687C0089D693 /* XCRemoteSwiftPackageReference "stream-chat-swift" */;
+			productName = StreamChat;
+		};
+		9179A77D27BB687C0089D693 /* StreamChatUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9179A77A27BB687C0089D693 /* XCRemoteSwiftPackageReference "stream-chat-swift" */;
+			productName = StreamChatUI;
+		};
+		9179A78227BBFAA30089D693 /* StreamChatSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9179A78127BBFAA30089D693 /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */;
+			productName = StreamChatSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9179A74527BB67C40089D693 /* Project object */;
 }
