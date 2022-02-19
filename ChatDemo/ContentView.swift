@@ -12,6 +12,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView{
+            PostView()
+                .tabItem {
+                    Label("Board", systemImage: "list.dash")
+                }
             ChatView()
                 .tabItem {
                     Label("Chat", systemImage: "message")

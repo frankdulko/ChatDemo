@@ -12,6 +12,8 @@ struct PlaceListView: View {
     
     let landmarks: [Landmark]
     var onTap: () -> ()
+    @State private var up = false
+    
     
     var body: some View {
         VStack() {
@@ -41,6 +43,7 @@ struct PlaceListView: View {
                 }
                 .navigationTitle("Check In")
             }
+            
         }
         .background(Color(UIColor.systemGray6))
         .cornerRadius(15)

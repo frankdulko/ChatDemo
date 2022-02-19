@@ -36,7 +36,7 @@ struct MapView: View {
                 PlaceListView(landmarks: self.landmarks) {
                                 // on tap
                                 self.tapped.toggle()
-                }.offset(y: calculateOffset())
+                }.offset(y: calculateOffset()).animation(.spring(), value: self.tapped)
                 
             }.onAppear(perform: showNearbyLandmarks)
         .navigationTitle("Map")

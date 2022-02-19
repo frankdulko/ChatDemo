@@ -30,6 +30,13 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         
         locationManager = CLLocationManager()
         locationManager?.requestAlwaysAuthorization()
+        
+        UserDefaults.standard.set("person.crop.circle.fill", forKey: "profilePhoto")
+        UserDefaults.standard.set("username", forKey: "username")
+        UserDefaults.standard.set("Check In Somewhere", forKey: "location")
+
+
+        
                 
         connectUser()
         

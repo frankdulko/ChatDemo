@@ -14,11 +14,13 @@ import StreamChatSwiftUI
 struct ChatDemoApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @StateObject var memoryModel = MemoryModel()
     
     var body: some Scene {
         WindowGroup {
             //ChatChannelListScreen(title: "Frank's Chat")
             ContentView()
+                .environmentObject(memoryModel)
         }
     }
 }
