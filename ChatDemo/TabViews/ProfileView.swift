@@ -27,7 +27,9 @@ struct ProfileView: View {
                 Text(memoryModel.user.location)
             }
             .navigationTitle("Profile")
+            .clipped()
         }
+
 //        .onAppear {
 //            photo = UserDefaults.standard.string(forKey: "profilePhoto") ?? "person.crop.circle.fill"
 //            username = UserDefaults.standard.string(forKey: "username") ?? "set username"

@@ -41,6 +41,7 @@ struct MapView: View {
                 }.offset(y: calculateOffset()).animation(.spring(), value: self.tapped)
                 
             }.onAppear(perform: showNearbyLandmarks)
+                .clipped()
         .navigationTitle("Map")
         }
     }
