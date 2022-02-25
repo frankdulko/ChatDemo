@@ -5,12 +5,15 @@
 //  Created by Frank Dulko on 2/19/22.
 //
 import Foundation
+import CoreLocation
 
 struct User : Identifiable {
     let id = UUID()
     var profilePicture:String = "person.crop.circle.fill"
     var username:String = "Frank"
     var location: String = "Check In to show Location"
+    var checkedIn:Bool = false
+    var currentLocation:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 0, longitude: 0)
 }
 
 struct Item : Identifiable {

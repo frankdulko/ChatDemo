@@ -28,7 +28,6 @@ struct ContentView: View {
                 .tabItem{
                     Label("Profile", systemImage: "person.crop.circle")
                 }
-            
         }
     }
 }

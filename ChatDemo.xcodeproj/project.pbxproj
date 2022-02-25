@@ -13,6 +13,8 @@
 		9140892127BD8EF30017BB61 /* PlaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9140892027BD8EF30017BB61 /* PlaceListView.swift */; };
 		9145B3A527C04F4A00800EE3 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9145B3A427C04F4A00800EE3 /* PostView.swift */; };
 		9145B3AB27C1472D00800EE3 /* MemoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9145B3AA27C1472D00800EE3 /* MemoryModel.swift */; };
+		9145B3AD27C2E4FD00800EE3 /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9145B3AC27C2E4FD00800EE3 /* WriteView.swift */; };
+		9145B3B027C417AC00800EE3 /* LegacyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9145B3AF27C417AC00800EE3 /* LegacyTextField.swift */; };
 		9179A75127BB67C40089D693 /* ChatDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179A75027BB67C40089D693 /* ChatDemoApp.swift */; };
 		9179A75327BB67C40089D693 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179A75227BB67C40089D693 /* ContentView.swift */; };
 		9179A75527BB67C60089D693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9179A75427BB67C60089D693 /* Assets.xcassets */; };
@@ -55,6 +57,8 @@
 		9140892027BD8EF30017BB61 /* PlaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListView.swift; sourceTree = "<group>"; };
 		9145B3A427C04F4A00800EE3 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		9145B3AA27C1472D00800EE3 /* MemoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryModel.swift; sourceTree = "<group>"; };
+		9145B3AC27C2E4FD00800EE3 /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
+		9145B3AF27C417AC00800EE3 /* LegacyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyTextField.swift; sourceTree = "<group>"; };
 		9179A74D27BB67C40089D693 /* ChatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9179A75027BB67C40089D693 /* ChatDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDemoApp.swift; sourceTree = "<group>"; };
 		9179A75227BB67C40089D693 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +130,14 @@
 			path = Landmarks;
 			sourceTree = "<group>";
 		};
+		9145B3AE27C4179800800EE3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9145B3AF27C417AC00800EE3 /* LegacyTextField.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		9179A74427BB67C40089D693 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +161,7 @@
 		9179A74F27BB67C40089D693 /* ChatDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9145B3AE27C4179800800EE3 /* Resources */,
 				9145B3A727C1446F00800EE3 /* Landmarks */,
 				9145B3A627C1443400800EE3 /* TabViews */,
 				9179A78A27BC09150089D693 /* Info.plist */,
@@ -158,6 +171,7 @@
 				9179A75627BB67C60089D693 /* Preview Content */,
 				9179A77F27BB69CD0089D693 /* AppDelegate.swift */,
 				9145B3AA27C1472D00800EE3 /* MemoryModel.swift */,
+				9145B3AC27C2E4FD00800EE3 /* WriteView.swift */,
 			);
 			path = ChatDemo;
 			sourceTree = "<group>";
@@ -328,6 +342,7 @@
 			files = (
 				9140891F27BD8CDB0017BB61 /* LandmarkAnnotations.swift in Sources */,
 				9179A78C27BC0EDE0089D693 /* Landmark.swift in Sources */,
+				9145B3AD27C2E4FD00800EE3 /* WriteView.swift in Sources */,
 				9140891D27BD8C1B0017BB61 /* MapHandler.swift in Sources */,
 				9179A78527BC02FF0089D693 /* ProfileView.swift in Sources */,
 				9179A78927BC07E90089D693 /* MapView.swift in Sources */,
@@ -339,6 +354,7 @@
 				9140891B27BD88650017BB61 /* CheckInView.swift in Sources */,
 				9179A78E27BC55880089D693 /* NearbyLandmarks.swift in Sources */,
 				9145B3A527C04F4A00800EE3 /* PostView.swift in Sources */,
+				9145B3B027C417AC00800EE3 /* LegacyTextField.swift in Sources */,
 				9179A75127BB67C40089D693 /* ChatDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,6 +516,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 5RF7XV65SP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChatDemo/Info.plist;
@@ -531,6 +548,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 5RF7XV65SP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChatDemo/Info.plist;

@@ -5,9 +5,8 @@ import SwiftUI
 import MapKit
 
 class AppDelegate: NSObject, UIApplicationDelegate {
-    
+        
     var streamChat: StreamChat?
-    var locationManager: CLLocationManager?
     
     var chatClient: ChatClient = {
         var config = ChatClientConfig(apiKey: .init("8br4watad788"))
@@ -28,20 +27,11 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
         let streamChat = StreamChat(chatClient: chatClient, appearance: appearance)
         
-        locationManager = CLLocationManager()
-        locationManager?.requestAlwaysAuthorization()
-        
-        UserDefaults.standard.set("person.crop.circle.fill", forKey: "profilePhoto")
-        UserDefaults.standard.set("username", forKey: "username")
-        UserDefaults.standard.set("Check In Somewhere", forKey: "location")
-
-
-        
-                
         connectUser()
         
         return true
     }
+    
     
     private func connectUser() {
             // This is a hardcoded token valid on Stream's tutorial environment.

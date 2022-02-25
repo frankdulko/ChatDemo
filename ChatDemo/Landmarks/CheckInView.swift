@@ -23,6 +23,7 @@ struct CheckInView: View {
             }.onDisappear{
                 if (isOn){
                     memoryModel.user.location = landmark.name
+                    memoryModel.user.checkedIn = true
                 }
             }
         }

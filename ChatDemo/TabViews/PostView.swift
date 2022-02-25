@@ -8,15 +8,47 @@
 import SwiftUI
 
 struct PostView: View {
+    @EnvironmentObject var memoryModel: MemoryModel
+    @State var showWriteView = false
     var body: some View {
-        ScrollView{
-            VStack{
-                ForEach(0 ..< 10) { index in
-                    Post()
+        //if(memoryModel.user.checkedIn){
+            ZStack{
+                VStack{
+                    Text(memoryModel.user.location)
+                    ScrollView{
+                        VStack{
+                            ForEach(0 ..< 10) { index in
+                                Post()
+                            }
+                            .padding()
+                        }
+                    }
                 }
-                .padding()
+                Button(action: {
+                    self.showWriteView.toggle()
+                }, label: {
+                    Image(systemName: "plus")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .padding()
+                        .cornerRadius(15)
+                    
+                })
+                    .sheet(isPresented: $showWriteView, content: {
+                        WriteView()
+                    })
+                .background(Color(UIColor.lightGray))
+                .cornerRadius(30)
+                .position(x: UIScreen.main.bounds.width - 60, y: UIScreen.main.bounds.height - 200)
             }
-        }
+            .background(Color(UIColor.systemGray5))
+
+//        }
+//        else{
+//            VStack{
+//                Text("Check In To View A Location's Board")
+//            }
+//        }
     }
 }
 
@@ -48,7 +80,7 @@ struct Post: View{
                 .padding()
             }
         }
+        .background(.white)
         .cornerRadius(20)
-        .border(.blue)
     }
 }
