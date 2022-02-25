@@ -11,43 +11,44 @@ struct PostView: View {
     @EnvironmentObject var memoryModel: MemoryModel
     @State var showWriteView = false
     var body: some View {
-        //if(memoryModel.user.checkedIn){
-        ZStack{
-            VStack{
-                    //Text(memoryModel.user.location)
-                    ScrollView{
-                        VStack{
-                            ForEach(0 ..< 10) { index in
-                                Post()
+            ZStack{
+                if(memoryModel.user.checkedIn){
+                    VStack{
+                            Text(memoryModel.user.location)
+                            .font(Font.headline)
+                            ScrollView{
+                                VStack{
+                                    ForEach(0 ..< 10) { index in
+                                        Post()
+                                    }
+                                    .padding(.all, 0)
+                                }
                             }
-                            .padding(.all, 0)
                         }
+                        Button(action: {
+                            self.showWriteView.toggle()
+                        }, label: {
+                            Image(systemName: "plus")
+                                .resizable()
+                                .frame(width: 30, height: 30)
+                                .padding()
+                                .cornerRadius(15)
+                            
+                        })
+                            .sheet(isPresented: $showWriteView, content: {
+                                WriteView()
+                            })
+                        .background(Color(UIColor.lightGray))
+                        .cornerRadius(30)
+                        .position(x: UIScreen.main.bounds.width - 60, y: UIScreen.main.bounds.height - 200)
+                    }
+                else{
+                    VStack {
+                        Text("Check In To View A Location's Board")
+                            .font(Font.largeTitle)
                     }
                 }
-                Button(action: {
-                    self.showWriteView.toggle()
-                }, label: {
-                    Image(systemName: "plus")
-                        .resizable()
-                        .frame(width: 30, height: 30)
-                        .padding()
-                        .cornerRadius(15)
-                    
-                })
-                    .sheet(isPresented: $showWriteView, content: {
-                        WriteView()
-                    })
-                .background(Color(UIColor.lightGray))
-                .cornerRadius(30)
-                .position(x: UIScreen.main.bounds.width - 60, y: UIScreen.main.bounds.height - 200)
             }
-
-//        }
-//        else{
-//            VStack{
-//                Text("Check In To View A Location's Board")
-//            }
-//        }
     }
 }
 
