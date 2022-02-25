@@ -16,10 +16,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("Board", systemImage: "list.dash")
                 }
-            ChatView()
-                .tabItem {
-                    Label("Chat", systemImage: "message")
-                }
+//            ChatView()
+//                .tabItem {
+//                    Label("Chat", systemImage: "message")
+//                }
             MapView()
                 .tabItem{
                     Label("Map", systemImage: "map")

@@ -12,15 +12,15 @@ struct PostView: View {
     @State var showWriteView = false
     var body: some View {
         //if(memoryModel.user.checkedIn){
-            ZStack{
-                VStack{
-                    Text(memoryModel.user.location)
+        ZStack{
+            VStack{
+                    //Text(memoryModel.user.location)
                     ScrollView{
                         VStack{
                             ForEach(0 ..< 10) { index in
                                 Post()
                             }
-                            .padding()
+                            .padding(.all, 0)
                         }
                     }
                 }
@@ -41,7 +41,6 @@ struct PostView: View {
                 .cornerRadius(30)
                 .position(x: UIScreen.main.bounds.width - 60, y: UIScreen.main.bounds.height - 200)
             }
-            .background(Color(UIColor.systemGray5))
 
 //        }
 //        else{
@@ -79,8 +78,9 @@ struct Post: View{
                 }
                 .padding()
             }
+            
         }
-        .background(.white)
-        .cornerRadius(20)
+        .background(Color(UIColor.systemGray6))
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
     }
 }
